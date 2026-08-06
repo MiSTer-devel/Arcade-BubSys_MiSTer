@@ -1,20 +1,20 @@
 <misterromdescription>
     <name>TwinBee (Bubble System)</name>
-    <mameversion>0266</mameversion>
-    <setname>twinbeeb</setname>
-    <mratimestamp>20241122</mratimestamp>
+    <mameversion>0289</mameversion>
+    <setname>bs_twinbee</setname>
+    <mratimestamp>20260805</mratimestamp>
     <year>1985</year>
     <manufacturer>Konami</manufacturer>
     <category>Shmup</category>
     <rbf>BubSys</rbf>
     <about author="Raki" twitter="@RCAVictorCo"></about>
     <resolution>15kHz</resolution>
-    <rotation>vertical</rotation>
+    <rotation>vertical (cw)</rotation>
     <players>1</players>
     <joystick>8-way</joystick>
     <special_controls></special_controls>
     <num_buttons>2</num_buttons>
-    
+
     <switches default="FF,FF,FF,00">
         <!-- DSW1 -->
         <dip bits="0,3"         name="Coinage A"    ids="Disabled,4C3P,4C1P,3C4P,3C2P,3C1P,2C5P,2C3P,2C1P,1C7P,1C6P,1C5P,1C4P,1C3P,1C2P,1C1P"/>
@@ -31,7 +31,8 @@
     </switches>
 
 
-    <rom index='0' md5="None" type='nonmerged' zip='twinbeeb.zip|bubsys.zip'>
+    <!-- MAME renamed this set twinbeeb -> bs_twinbee in 0.289; both zip names are searched -->
+    <rom index='0' md5="None" type='nonmerged' zip='bs_twinbee.zip|twinbeeb.zip|bubsys.zip'>
         <!-- FBM54DB user pages 0x000000-0x0402FF -->
         <part crc="4d396a0a" name="twinbee.bin"/>
         <!-- padding            0x040300-0x040FFF -->
